@@ -30,3 +30,25 @@ fill(0,255,0);
   void keyPressed(){  
 
 sp = key-'0'; } 
+
+** 응용 **
+`공의 좌우 왕복`
+void setup() {  
+
+size(400 ,400);  
+  
+}  
+
+int i, dir=1;  
+ 
+void draw() {   
+  
+  background(0,190,160);  
+  
+  ellipse(i,200 ,80 ,80);   
+fill(0,0,0);     
+
+ if(i>width) dir=-1;     
+ if(i<0) dir=1;                
+ i = i+dir;            
+}     
